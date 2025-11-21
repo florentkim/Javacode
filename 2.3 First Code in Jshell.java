@@ -14,4 +14,4 @@ $3 ==> 6
 jshell> 9-6
 $4 ==> 3
 
-jshell>
+jshell>git --version

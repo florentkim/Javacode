@@ -1,0 +1,20 @@
+services:
+  devcontainer:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: dev-env-java
+    volumes:
+      - C:/Users/fkpv/Documents/fk3/Dev:/home/devuser/workspace:delegated
+    ports:
+      - "3000:3000"  # Exemple si tu lances un serveur Node
+    tty: true
+    stdin_open: true
+    environment:
+      PYENV_ROOT: /home/devuser/.pyenv
+    networks:
+      - devnet
+
+networks:
+  devnet:
+    driver: bridge

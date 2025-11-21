@@ -1,0 +1,21 @@
+{
+    "dockerComposeFile": "./docker-compose.yaml",
+    "service": "devcontainer",
+    "workspaceFolder": "/home/devuser",
+    "shutdownAction": "none",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.python",
+                "ms-python.vscode-pylance",
+                "ms-toolsai.jupyter",
+                "ms-azuretools.vscode-docker",
+                "njpwerner.autodocstring",
+                "batisteo.vscode-django",
+                "wholroyd.jinja",
+                "eamodio.gitlens",
+                "mhutchie.git-graph"
+            ]
+        }
+    }
+}
